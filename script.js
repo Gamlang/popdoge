@@ -12,6 +12,15 @@ window.onload = function(){
         img.src = 'doge1.png';
     })
 
+    img.addEventListener('touchstart', function (){
+        increaseScore();
+        img.src = 'doge2.png';
+    })
+
+    img.addEventListener('touchover', function (){
+        img.src = 'doge1.png';
+    })
+
     function increaseScore(){
         score++;
         count.innerHTML = score;
